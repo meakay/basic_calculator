@@ -1,0 +1,56 @@
+x = """
+(1) TOPLAMA
+(2) ÇIKARMA
+(3) ÇARPMA
+(4) BÖLME
+(5) KARESİNİ ALMA
+(6) KÖK ALMA
+"""
+print(x)
+
+
+anahtar= "1"
+
+while anahtar=="1":
+    select = input("İstediğiniz işlemi seçiniz (çıkmak için q tuşuna basın): ")
+    if select == "q":        
+        print("Umarım bir daha görüşürüz")
+        anahtar = "0"
+    elif select == "1":
+        print("Toplama işlemini seçtiniz")
+        sayı1 = int(input("Toplama işlemi için birinci değeri giriniz: "))
+        sayı2 = int(input("Toplama işlemi için ikinci değeri giriniz: "))
+        print(sayı1, "+", sayı2, "=", sayı1 + sayı2 )
+
+    elif select == "2":
+        print("Çıkarma işlemini seçtiniz")
+        sayı3 = int(input("Çıkarma işlemi için birinci değeri giriniz: "))
+        sayı4 = int(input("Çıkarma işlemi için ikinci değeri giriniz: "))
+        print( sayı3, "-", sayı4, "=", sayı3 - sayı4 )
+
+    elif select == "3":
+        print("Çarpma işlemini seçtiniz")
+        sayı5 = int(input("Çarpma işlemi için birinci değeri giriniz: "))
+        sayı6 = int(input("Çarpma işlemi için ikinci değeri giriniz: "))
+        print(sayı5, "x", sayı6, "=", sayı5 * sayı6 )
+
+    elif select == "4":
+        print("Bölme işlemini seçtiniz")
+        sayı7 = int(input("Bölme işlemi için birinci değeri giriniz: "))
+        sayı8 = int(input("Bölme işlemi için ikinci değeri giriniz: "))
+        print(sayı7, "x", sayı8, "=", sayı7 / sayı8 )
+
+    elif select == "5":
+        print("Karesini alma işlemini seçtiniz")
+        sayı9 = int(input("Karesini alma işlemi için değeri giriniz: "))
+        print(sayı9, "karesi", "=", sayı9**2)
+
+    elif select == "6":
+        print("Kök alma işlemini seçtiniz")
+        sayı9 = int(input("Kök alma işlemi için değeri giriniz: "))
+        print(sayı9, "kökü", "=", sayı9**0.5)
+
+    else:
+        print("Yanlış giriş aşağıdakilerden birini giriniz.", x)
+
+
